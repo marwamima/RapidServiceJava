@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="904.0" prefWidth="796.0" styleClass="backinterface" stylesheets="@../stylecsspackage/style%20(1).css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_cote_prestataire.Espaceprestataire2Controller">
+   <children>
+      <Pane layoutX="26.0" layoutY="35.0" prefHeight="512.0" prefWidth="737.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="115.0" layoutY="22.0" prefHeight="46.0" prefWidth="482.0" text="Modifier informations du compte">
+               <font>
+                  <Font name="Calibri Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="87.0" layoutX="636.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="idNom" layoutX="52.0" layoutY="121.0" prefHeight="17.0" prefWidth="47.0" text="Nom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textnom" layoutX="113.0" layoutY="117.0" />
+            <Label fx:id="idPrenom" layoutX="48.0" layoutY="161.0" prefHeight="17.0" prefWidth="55.0" text="Prenom">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textprenom" layoutX="112.0" layoutY="157.0" />
+            <Label fx:id="idVille" layoutX="52.0" layoutY="199.0" prefHeight="17.0" prefWidth="47.0" text="Ville">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textville" layoutX="112.0" layoutY="195.0" />
+            <Label fx:id="idTel" layoutX="52.0" layoutY="236.0" prefHeight="17.0" prefWidth="28.0" text="Tel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="texttel" layoutX="112.0" layoutY="232.0" />
+            <Label fx:id="idMail" layoutX="48.0" layoutY="277.0" prefHeight="17.0" prefWidth="28.0" text="Mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textmail" layoutX="112.0" layoutY="273.0" />
+            <Label fx:id="idPassword" layoutX="20.0" layoutY="314.0" prefHeight="20.0" prefWidth="86.0" text="Mot de passe">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textpassword" layoutX="115.0" layoutY="312.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label fx:id="idExperience" layoutX="23.0" layoutY="351.0" prefHeight="20.0" prefWidth="86.0" text="Experience">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textexperience" layoutX="112.0" layoutY="349.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label fx:id="idNomService" layoutX="23.0" layoutY="389.0" prefHeight="20.0" prefWidth="86.0" text="Nom service">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textnomservice" layoutX="112.0" layoutY="387.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label fx:id="idTypeService" layoutX="18.0" layoutY="428.0" prefHeight="20.0" prefWidth="86.0" text="Type service">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="texttypeservice" layoutX="115.0" layoutY="424.0" prefHeight="25.0" prefWidth="149.0" />
+            <JFXButton fx:id="idexecute" layoutX="562.0" layoutY="448.0" onAction="#updateDetails" prefHeight="25.0" prefWidth="100.0" styleClass="button-design" stylesheets="@../stylecsspackage/style%20(1).css" text="Exécuter">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="73.0" fitWidth="115.0" layoutX="40.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="697.0" layoutY="3.0" prefHeight="17.0" prefWidth="66.0" onAction="#Close_On_Action" style="-fx-font-family: black;" text="Retour" textFill="#141313" />
+      <Pane layoutX="24.0" layoutY="572.0" prefHeight="300.0" prefWidth="737.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="104.0" layoutY="14.0" prefHeight="46.0" prefWidth="508.0" text="               Supprimer compte">
+               <font>
+                  <Font name="Calibri Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="idoui" layoutX="504.0" layoutY="95.0" onAction="#Supp_Compte_On_Action" styleClass="button-design" stylesheets="@../stylecsspackage/style%20(1).css" text="OUI">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="idnon" layoutX="597.0" layoutY="95.0" onAction="#Close_On_Action" styleClass="button-design" stylesheets="@../stylecsspackage/style%20(1).css" text="Non">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="idlabel" layoutX="61.0" layoutY="87.0" prefHeight="46.0" prefWidth="358.0" text="Cher prestataire, voulez -vous supprimer votre compte?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

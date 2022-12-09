@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="551.0" styleClass="backinterface" stylesheets="@../stylecsspackage/style%20(1).css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_cote_client.SupprimercompteController">
+   <children>
+      <Pane layoutX="22.0" layoutY="35.0" prefHeight="202.0" prefWidth="504.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="lb1" layoutX="44.0" layoutY="36.0" prefHeight="39.0" prefWidth="394.0" text="Etes vous sûr de vouloir supprimer votre compte?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="280.0" layoutY="101.0" onAction="#supp_compte_on_action1" prefHeight="30.0" prefWidth="88.0" styleClass="button-design" stylesheets="@../stylecsspackage/style%20(1).css" text="Confirmer ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="394.0" layoutY="101.0" prefHeight="30.0" prefWidth="72.0" onAction="#close_on_action1" styleClass="button-design" stylesheets="@../stylecsspackage/style%20(1).css" text="Annuler">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Hyperlink layoutX="471.0" layoutY="3.0"  onAction="#close_on_action1"  styleClass="hypertext-design" stylesheets="@../stylecsspackage/style%20(1).css" text="Retour" textFill="#141313" />
+   </children>
+</AnchorPane>
